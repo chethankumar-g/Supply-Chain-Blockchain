@@ -1,0 +1,7 @@
+Flask==2.0.1
+Flask-Cors==3.0.10
+requests==2.26.0
+web3==5.24.0
+ipfshttpclient==0.8.0a2
+pycryptodome==3.10.1
+python-dotenv==0.19.1
