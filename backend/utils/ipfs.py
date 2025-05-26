@@ -1,7 +1,7 @@
 import ipfshttpclient
 
 class IPFSUtils:
-    def __init__(self, host='localhost', port=5001):
+    def __init__(self, host='127.0.0.1', port=5001):
         self.client = ipfshttpclient.connect(f'/ip4/{host}/tcp/{port}/http')
 
     def upload_file(self, file_path):

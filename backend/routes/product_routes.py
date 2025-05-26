@@ -6,7 +6,7 @@ import os
 product_routes = Blueprint('product_routes', __name__)
 
 w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:7545'))
-with open(os.path.join(os.path.dirname(__file__), '../../contracts/SupplyChain.json')) as f:
+with open(os.path.join(os.path.dirname(__file__), '../../build/contracts/SupplyChain.json')) as f:
     contract_json = json.load(f)
 contract_abi = contract_json['abi']
 contract_address = os.environ.get('SUPPLYCHAIN_CONTRACT_ADDRESS')
